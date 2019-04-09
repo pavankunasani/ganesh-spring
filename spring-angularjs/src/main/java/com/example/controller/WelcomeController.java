@@ -13,6 +13,7 @@ public class WelcomeController {
 	@GetMapping({"/", "/hello"})
     public String hello(Model model) {
         model.addAttribute("name", "world");
+        
         return "hello";
     }
 	
